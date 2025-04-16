@@ -47,5 +47,23 @@
 	<true/>
 	<key>UIFileSharingEnabled</key>
 	<true/>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>This app needs access to the local network for debugging and to run AI models</string>
+
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+
+	<key>UIBackgroundModes</key>
+	<array>
+    <string>processing</string>
+</array>
+
+<key>NSBonjourServices</key>
+<array>
+    <string>_dartobservatory._tcp</string>
+</array>
 </dict>
 </plist>
